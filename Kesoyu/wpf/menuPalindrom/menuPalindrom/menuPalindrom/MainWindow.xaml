@@ -7,6 +7,50 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Menu x:Name="menu">
+            <MenuItem Header="Tekstowe" x:Name="string">
+                <MenuItem Header="Palindrom" Click="Palindrom"/>
+                <MenuItem Header="Anagram" Click="Anagram"/>
+            </MenuItem>
+            <MenuItem Header="Liczbowe" x:Name="number">
+                <MenuItem Header="Funkcje">
+                    <MenuItem Header="NWD" Click="NWD"/>
+                    <MenuItem Header="NWW" Click="NWW"/>
+                </MenuItem>
+                <MenuItem Header="Sortowanie">
+                    <MenuItem Header="Bąbelkowe" Click="sortBabelkowe"/>
+                    <MenuItem Header="Przez wstawianie" Click="sortWst"/>
+                    <MenuItem Header="Przez wybieranie" Click="sortWbr"/>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <StackPanel Visibility="Hidden" Grid.Row="1" x:Name="palindromWindow">
+            <TextBlock Text="Palindrom"/>
+        </StackPanel>
+        <StackPanel Visibility="Hidden" Grid.Row="1" x:Name="angaramWindow">
+            <TextBlock Text="Anagram"/>
+        </StackPanel>
+        <StackPanel Visibility="Hidden" Grid.Row="1" x:Name="pierwszeWindow">
+            <TextBlock Text="pierwszeWindow"/>
+        </StackPanel>
+        <StackPanel Visibility="Hidden" Grid.Row="1" x:Name="nwdWindow">
+            <TextBlock Text="nwdWindow"/>
+        </StackPanel>
+        <StackPanel Visibility="Hidden" Grid.Row="1" x:Name="nwwWindow">
+            <TextBlock Text="nwwWindow"/>
+        </StackPanel>
+        <StackPanel Visibility="Hidden" Grid.Row="1" x:Name="sortowanieBabelkowe">
+            <TextBlock Text="sortowanieBabelkowe"/>
+        </StackPanel>
+        <StackPanel Visibility="Hidden" Grid.Row="1" x:Name="sortowaniePrzezWstawianie">
+            <TextBlock Text="sortowaniePrzezWstawianie"/>
+        </StackPanel>
+        <StackPanel Visibility="Hidden" Grid.Row="1" x:Name="sortowaniePrzezWybieranie">
+            <TextBlock Text="sortowaniePrzezWybieranie"/>
+        </StackPanel>
     </Grid>
 </Window>

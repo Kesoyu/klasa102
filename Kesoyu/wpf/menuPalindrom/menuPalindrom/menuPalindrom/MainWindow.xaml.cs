@@ -20,9 +20,62 @@ namespace menuPalindrom
     /// </summary>
     public partial class MainWindow : Window
     {
+        Dictionary<String, StackPanel> allWindow = new Dictionary<string, StackPanel>();
         public MainWindow()
         {
             InitializeComponent();
+            allWindow.Add("palindrom", palindromWindow);
+            allWindow.Add("anagram", angaramWindow);
+            allWindow.Add("pierwsze", pierwszeWindow);
+            allWindow.Add("nwd", nwdWindow);
+            allWindow.Add("nww", nwwWindow);
+            allWindow.Add("babelkowe", sortowanieBabelkowe);
+            allWindow.Add("wst", sortowaniePrzezWstawianie);
+            allWindow.Add("wbr", sortowaniePrzezWybieranie);
+        }
+
+        private void SelectWindow(String name)
+        {
+            foreach (StackPanel panel in allWindow.Values)
+            {
+                panel.Visibility = Visibility.Hidden;
+            }
+            allWindow[name].Visibility = Visibility.Visible;
+        }
+
+        private void Palindrom(object sender, RoutedEventArgs e)
+        {
+            SelectWindow("palindrom");
+        }
+
+        private void Anagram(object sender, RoutedEventArgs e)
+        {
+            SelectWindow("anagram");
+        }
+
+        private void NWD(object sender, RoutedEventArgs e)
+        {
+            SelectWindow("nwd");
+        }
+
+        private void NWW(object sender, RoutedEventArgs e)
+        {
+            SelectWindow("nww");
+        }
+
+        private void sortBabelkowe(object sender, RoutedEventArgs e)
+        {
+            SelectWindow("babelkowe");
+        }
+
+        private void sortWst(object sender, RoutedEventArgs e)
+        {
+            SelectWindow("wst");
+        }
+
+        private void sortWbr(object sender, RoutedEventArgs e)
+        {
+            SelectWindow("wbr");
         }
     }
 }
