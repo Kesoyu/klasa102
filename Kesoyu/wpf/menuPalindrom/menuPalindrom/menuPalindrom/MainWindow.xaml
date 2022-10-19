@@ -29,10 +29,18 @@
             </MenuItem>
         </Menu>
         <StackPanel Visibility="Hidden" Grid.Row="1" x:Name="palindromWindow">
-            <TextBlock Text="Palindrom"/>
+            <TextBlock Text="Podaj Palindrom"/>
+            <TextBox x:Name="palindromTextField"></TextBox>
+            <Button Content="Sprawdz czy wpisany tekst jest palindromem" Click="isPalindromClick"/>
+            <TextBlock x:Name="palindromOutput"/>
         </StackPanel>
         <StackPanel Visibility="Hidden" Grid.Row="1" x:Name="angaramWindow">
-            <TextBlock Text="Anagram"/>
+            <Label FontSize="24">Pierwsze słowo</Label>
+            <TextBox x:Name="anagramFirstText"></TextBox>
+            <Label FontSize="24">Drugie słowo</Label>
+            <TextBox x:Name="anagramSecondText"></TextBox>
+            <Button FontSize="24" Click="isAngaramClick">Analizuj</Button>
+            <TextBlock x:Name="anagramOutput"></TextBlock>
         </StackPanel>
         <StackPanel Visibility="Hidden" Grid.Row="1" x:Name="pierwszeWindow">
             <TextBlock Text="pierwszeWindow"/>

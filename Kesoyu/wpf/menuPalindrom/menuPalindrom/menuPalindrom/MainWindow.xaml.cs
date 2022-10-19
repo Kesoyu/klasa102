@@ -77,5 +77,81 @@ namespace menuPalindrom
         {
             SelectWindow("wbr");
         }
+        private bool isPalindrom(string text)
+        {
+            if (text.Length % 2 == 0)
+            {
+                for(int i = 0; i < text.Length/2; i++)
+                {
+                    if(text[i] != text[text.Length-1-i])
+                    {
+                        return false;
+                    }
+                }
+            }
+            else
+            {
+                for (int i = 0; i < (text.Length-1) / 2; i++)
+                {
+                    if (text[i] != text[text.Length -1- i])
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+
+        private bool isAnagram(string firstText, string secondText)
+        {
+            if (firstText.Length != secondText.Length)
+                return false;
+            List<Char> firstTextTable = new List<Char>();
+            List<Char> secondTextTable = new List<Char>();
+            for(int i = 0; i < firstText.Length; i++)
+            {
+                firstTextTable.Add(firstText[i]);
+            }
+            for (int i = 0; i < secondText.Length; i++)
+            {
+                secondTextTable.Add(secondText[i]);
+            }
+            firstTextTable.Sort();
+            secondTextTable.Sort();
+            for(int i = 0; i < firstTextTable.Count; i++)
+            {
+                if(firstTextTable[i] != secondTextTable[i])
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        private void isPalindromClick(object sender, RoutedEventArgs e)
+        {
+            String palindromText = palindromTextField.Text;
+            if (palindromText.Length == 0)
+                palindromOutput.Text = "ale coś wpisz ok?";
+            if (palindromText.Length == 0)
+                return;
+            if (isPalindrom(palindromText))
+                palindromOutput.Text = "Podane słowo jest palindromem";
+            else {
+                palindromOutput.Text = "zjebales";
+            }
+        }
+
+        private void isAngaramClick(object sender, RoutedEventArgs e)
+        {
+            String firstAngramText = anagramFirstText.Text;
+            String secondAngramText = anagramSecondText.Text;
+            if (firstAngramText.Length == 0 || secondAngramText.Length == 0)
+                anagramOutput.Text = "ale wpisz coś ok?";
+            if (isAnagram(firstAngramText, secondAngramText))
+                anagramOutput.Text = "Slowa sa anagramami";
+            else
+                anagramOutput.Text = "zjebales";
+        }
     }
 }
