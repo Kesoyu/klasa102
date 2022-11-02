@@ -20,8 +20,11 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,6 +37,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.example.newgooglemapsapi.databinding.ActivityMapsBinding;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
@@ -43,11 +47,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private GoogleMap mMap;
     private ActivityMapsBinding binding;
     TextView editLocation;
+    ListView listView;
+    ArrayList<String> arrayList;
     public static final int CAMERA_ACTION_CODE = 1;
     ImageView imageProfile;
     Button takePhoto;
     ActivityResultLauncher<Intent> activityResultLauncher;
-
+    String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +61,20 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         binding = ActivityMapsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        listView = findViewById(R.id.listView);
+        arrayList = new ArrayList<>();
+        for(int i = 1;i<6;i++)
+            arrayList.add("Usterka "+ i);
 
+        ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayList);
+        listView.setAdapter(arrayAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                name = arrayList.get(i);
+                Toast.makeText(MapsActivity.this,""+name,Toast.LENGTH_SHORT).show();
+            }
+        });
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);

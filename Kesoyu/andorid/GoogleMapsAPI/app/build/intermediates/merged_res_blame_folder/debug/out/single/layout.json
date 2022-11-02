@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.example.googlemapsapi.app-mergeDebugResources-31:/layout/activity_camera_layout.xml",
+        "source": "com.example.googlemapsapi.app-main-34:/layout/activity_camera_layout.xml"
+    },
+    {
+        "merged": "com.example.googlemapsapi.app-mergeDebugResources-31:/layout/activity_maps.xml",
+        "source": "com.example.googlemapsapi.app-main-34:/layout/activity_maps.xml"
+    },
+    {
+        "merged": "C:\\Users\\programista\\.gradle\\daemon\\7.4\\com.example.googlemapsapi.app-mergeDebugResources-31:\\layout\\activity_maps.xml",
+        "source": "C:\\Users\\programista\\.gradle\\daemon\\7.4\\com.example.googlemapsapi.app-main-34:\\layout\\activity_maps.xml"
+    }
+]

@@ -1,0 +1,191 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.googlemapsapi"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="28"
+8-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:4:5-65
+11-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:4:22-62
+12
+13    <uses-feature android:name="android.hardware.camera" />
+13-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:5:5-60
+13-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:5:19-57
+14
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:6:5-81
+15-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:6:22-78
+16    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+16-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:7:5-71
+16-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:7:22-68
+17    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+17-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:8:5-79
+17-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:8:22-76
+18    <!-- Needed only if your app targets Android 5.0 (API level 21) or higher. -->
+19    <uses-feature android:name="android.hardware.location.gps" />
+19-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:10:5-66
+19-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:10:19-63
+20
+21    <!-- Include required permissions for Google Maps API to run. -->
+22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+22-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\programista\.gradle\caches\transforms-3\d61a395e25a6c48ed91029ef85e5135b\transformed\play-services-maps-18.0.2\AndroidManifest.xml:23:5-79
+22-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\programista\.gradle\caches\transforms-3\d61a395e25a6c48ed91029ef85e5135b\transformed\play-services-maps-18.0.2\AndroidManifest.xml:23:22-76
+23    <uses-permission android:name="android.permission.INTERNET" />
+23-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\programista\.gradle\caches\transforms-3\d61a395e25a6c48ed91029ef85e5135b\transformed\play-services-maps-18.0.2\AndroidManifest.xml:24:5-67
+23-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\programista\.gradle\caches\transforms-3\d61a395e25a6c48ed91029ef85e5135b\transformed\play-services-maps-18.0.2\AndroidManifest.xml:24:22-64
+24
+25    <uses-feature
+25-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\programista\.gradle\caches\transforms-3\d61a395e25a6c48ed91029ef85e5135b\transformed\play-services-maps-18.0.2\AndroidManifest.xml:26:5-28:35
+26        android:glEsVersion="0x00020000"
+26-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\programista\.gradle\caches\transforms-3\d61a395e25a6c48ed91029ef85e5135b\transformed\play-services-maps-18.0.2\AndroidManifest.xml:27:9-41
+27        android:required="true" />
+27-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\programista\.gradle\caches\transforms-3\d61a395e25a6c48ed91029ef85e5135b\transformed\play-services-maps-18.0.2\AndroidManifest.xml:28:9-32
+28
+29    <queries>
+29-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\programista\.gradle\caches\transforms-3\d61a395e25a6c48ed91029ef85e5135b\transformed\play-services-maps-18.0.2\AndroidManifest.xml:30:5-34:15
+30
+31        <!-- Needs to be explicitly declared on Android R+ -->
+32        <package android:name="com.google.android.apps.maps" />
+32-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\programista\.gradle\caches\transforms-3\d61a395e25a6c48ed91029ef85e5135b\transformed\play-services-maps-18.0.2\AndroidManifest.xml:33:9-64
+32-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\programista\.gradle\caches\transforms-3\d61a395e25a6c48ed91029ef85e5135b\transformed\play-services-maps-18.0.2\AndroidManifest.xml:33:18-61
+33    </queries>
+34
+35    <application
+35-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:11:5-59:19
+36        android:allowBackup="true"
+36-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:12:9-35
+37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+37-->[androidx.core:core:1.8.0] C:\Users\programista\.gradle\caches\transforms-3\5a2a27371ccd2a05ca720e445505bedd\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+38        android:dataExtractionRules="@xml/data_extraction_rules"
+38-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:13:9-65
+39        android:debuggable="true"
+40        android:extractNativeLibs="false"
+41        android:fullBackupContent="@xml/backup_rules"
+41-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:14:9-54
+42        android:icon="@mipmap/ic_launcher"
+42-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:15:9-43
+43        android:label="@string/app_name"
+43-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:16:9-41
+44        android:roundIcon="@mipmap/ic_launcher_round"
+44-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:17:9-54
+45        android:supportsRtl="true"
+45-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:18:9-35
+46        android:testOnly="true"
+47        android:theme="@style/Theme.GoogleMapsAPI" >
+47-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:19:9-51
+48
+49        <!--
+50             TODO: Before you run your application, you need a Google Maps API key.
+51
+52             To get one, follow the directions here:
+53
+54                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+55
+56             Once you have your API key (it starts with "AIza"), define a new property in your
+57             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+58             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+59        -->
+60        <meta-data
+60-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:33:9-35:71
+61            android:name="com.google.android.geo.API_KEY"
+61-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:34:13-58
+62            android:value="AIzaSyBkmPJOyXwX1DPfvuIk3TcerUXC_N-0jUc" />
+62-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:35:13-68
+63
+64        <activity
+64-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:37:9-46:20
+65            android:name="com.example.googlemapsapi.MapsActivity"
+65-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:38:13-41
+66            android:exported="true"
+66-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:39:13-36
+67            android:label="@string/title_activity_maps" >
+67-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:40:13-56
+68            <intent-filter>
+68-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:41:13-45:29
+69                <action android:name="android.intent.action.MAIN" />
+69-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:42:17-69
+69-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:42:25-66
+70
+71                <category android:name="android.intent.category.LAUNCHER" />
+71-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:44:17-77
+71-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:44:27-74
+72            </intent-filter>
+73        </activity>
+74        <activity
+74-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:47:9-58:20
+75            android:name="com.example.googlemapsapi.CameraLayout"
+75-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:47:19-47
+76            android:exported="true"
+76-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:48:13-36
+77            android:label="@string/app_name"
+77-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:49:13-45
+78            android:screenOrientation="landscape" >
+78-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:51:13-50
+79
+80            <!-- configure this activity to use landscape orientation -->
+81
+82            <intent-filter>
+82-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:41:13-45:29
+83                <action android:name="android.intent.action.MAIN" />
+83-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:42:17-69
+83-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:42:25-66
+84
+85                <category android:name="android.intent.category.LAUNCHER" />
+85-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:44:17-77
+85-->C:\Users\programista\Desktop\4a\Kesoyu\andorid\GoogleMapsAPI\app\src\main\AndroidManifest.xml:44:27-74
+86            </intent-filter>
+87        </activity>
+88        <!-- Needs to be explicitly declared on P+ -->
+89        <uses-library
+89-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\programista\.gradle\caches\transforms-3\d61a395e25a6c48ed91029ef85e5135b\transformed\play-services-maps-18.0.2\AndroidManifest.xml:39:9-41:40
+90            android:name="org.apache.http.legacy"
+90-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\programista\.gradle\caches\transforms-3\d61a395e25a6c48ed91029ef85e5135b\transformed\play-services-maps-18.0.2\AndroidManifest.xml:40:13-50
+91            android:required="false" />
+91-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\programista\.gradle\caches\transforms-3\d61a395e25a6c48ed91029ef85e5135b\transformed\play-services-maps-18.0.2\AndroidManifest.xml:41:13-37
+92
+93        <activity
+93-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\programista\.gradle\caches\transforms-3\08da7830e821a047381d8295936f4de2\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+94            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+94-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\programista\.gradle\caches\transforms-3\08da7830e821a047381d8295936f4de2\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+95            android:exported="false"
+95-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\programista\.gradle\caches\transforms-3\08da7830e821a047381d8295936f4de2\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+96            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+96-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\programista\.gradle\caches\transforms-3\08da7830e821a047381d8295936f4de2\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+97
+98        <meta-data
+98-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\programista\.gradle\caches\transforms-3\433df6ffdf956468a31879dea23c90bc\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+99            android:name="com.google.android.gms.version"
+99-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\programista\.gradle\caches\transforms-3\433df6ffdf956468a31879dea23c90bc\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+100            android:value="@integer/google_play_services_version" />
+100-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\programista\.gradle\caches\transforms-3\433df6ffdf956468a31879dea23c90bc\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+101
+102        <provider
+102-->[androidx.emoji2:emoji2:1.2.0] C:\Users\programista\.gradle\caches\transforms-3\e9bad56f0a34542ba6f16535c1bf9753\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+103            android:name="androidx.startup.InitializationProvider"
+103-->[androidx.emoji2:emoji2:1.2.0] C:\Users\programista\.gradle\caches\transforms-3\e9bad56f0a34542ba6f16535c1bf9753\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+104            android:authorities="com.example.googlemapsapi.androidx-startup"
+104-->[androidx.emoji2:emoji2:1.2.0] C:\Users\programista\.gradle\caches\transforms-3\e9bad56f0a34542ba6f16535c1bf9753\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+105            android:exported="false" >
+105-->[androidx.emoji2:emoji2:1.2.0] C:\Users\programista\.gradle\caches\transforms-3\e9bad56f0a34542ba6f16535c1bf9753\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+106            <meta-data
+106-->[androidx.emoji2:emoji2:1.2.0] C:\Users\programista\.gradle\caches\transforms-3\e9bad56f0a34542ba6f16535c1bf9753\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+107                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+107-->[androidx.emoji2:emoji2:1.2.0] C:\Users\programista\.gradle\caches\transforms-3\e9bad56f0a34542ba6f16535c1bf9753\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+108                android:value="androidx.startup" />
+108-->[androidx.emoji2:emoji2:1.2.0] C:\Users\programista\.gradle\caches\transforms-3\e9bad56f0a34542ba6f16535c1bf9753\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+109            <meta-data
+109-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\programista\.gradle\caches\transforms-3\947a333cde4fea3c98602e3c1edfb2b5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+110                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+110-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\programista\.gradle\caches\transforms-3\947a333cde4fea3c98602e3c1edfb2b5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+111                android:value="androidx.startup" />
+111-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\programista\.gradle\caches\transforms-3\947a333cde4fea3c98602e3c1edfb2b5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+112        </provider>
+113    </application>
+114
+115</manifest>

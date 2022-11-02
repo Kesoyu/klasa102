@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\programista\\.gradle\\daemon\\7.4\\com.example.newgooglemapsapi.app-mergeDebugResources-31:\\layout\\activity_maps.xml",
+        "source": "C:\\Users\\programista\\.gradle\\daemon\\7.4\\com.example.newgooglemapsapi.app-main-34:\\layout\\activity_maps.xml"
+    },
+    {
+        "merged": "com.example.newgooglemapsapi.app-mergeDebugResources-31:/layout/activity_maps.xml",
+        "source": "com.example.newgooglemapsapi.app-main-34:/layout/activity_maps.xml"
+    }
+]

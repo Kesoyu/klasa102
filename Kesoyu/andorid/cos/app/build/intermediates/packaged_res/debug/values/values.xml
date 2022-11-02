@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="ic_launcher_my_background">#6C6C6C</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">cos</string>
+    <string name="nope">zła odpowiedz</string>
+    <string name="odp_a">Mount Everest</string>
+    <string name="odp_a2">Daniel Ricciardo </string>
+    <string name="odp_a3">2021 </string>
+    <string name="odp_a4">Toto Wolff </string>
+    <string name="odp_b">Mount Blanc</string>
+    <string name="odp_b2">Lando Norris</string>
+    <string name="odp_b3">2022</string>
+    <string name="odp_b4">Christian Horner</string>
+    <string name="odp_c">Rysy</string>
+    <string name="odp_c2">Max Verstapen</string>
+    <string name="odp_c3">2019</string>
+    <string name="odp_c4">Mattia Binotto</string>
+    <string name="ok">Dobra odpowiedz</string>
+    <string name="opis">góra ze śniegiem</string>
+    <string name="opis2">młody kierowca w F1 (xd)</string>
+    <string name="opis3">młody kierowca w F1 (xd)</string>
+    <string name="opis4">nie wiem co napisać</string>
+    <string name="opis_xo_scroll">najwyższy szczyt Ziemi, ośmiotysięcznik położony w Himalajach Wysokich, na granicy Nepalu i Chińskiej Republiki Ludowej. Po chińskiej stronie objęty ochroną w ramach rezerwatu biosfery pod nazwą Rezerwat Biosfery Czomolungmy. Jest zbudowany z granitów, gnejsów oraz z wapieni i łupków</string>
+    <string name="podpowiedz">podpowiedz</string>
+    <string name="punktacja">punkty:</string>
+    <string name="pytanie_bolid">Z którego roku jest ten bolid mercedesa:</string>
+    <string name="pytanie_kierowca">Jaki kierowca F1 jest na zdj:</string>
+    <string name="pytanie_szczyt">Jaki szczyt jest widoczny na zdjęciu</string>
+    <string name="pytanie_szef">Jak nazywa sie szef tego zespołu F1</string>
+    <string name="sprawd_odpowied">Sprawdź odpowiedź</string>
+    <style name="Theme.Cos" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        
+    </style>
+</resources>
