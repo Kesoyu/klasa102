@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">cos</string>
+    <string name="pytanie_szczyt">Jaki szczyt jest widoczny na zdjęciu</string>
+    <string name="odp_a">Mount Everest</string>
+    <string name="odp_b">Mount Blanc</string>
+    <string name="odp_c">Rysy</string>
+    <string name="opis">góra ze śniegiem</string>
+    <string name="pytanie_kierowca">Jaki kierowca F1 jest na zdj:</string>
+    <string name="odp_a2">Daniel Ricciardo </string>
+    <string name="odp_b2">Lando Norris</string>
+    <string name="odp_c2">Max Verstapen</string>
+    <string name="opis2">młody kierowca w F1 (xd)</string>
+    <string name="pytanie_bolid">Z którego roku jest ten bolid mercedesa:</string>
+    <string name="odp_a3">2021 </string>
+    <string name="odp_b3">2022</string>
+    <string name="odp_c3">2019</string>
+    <string name="opis3">młody kierowca w F1 (xd)</string>
+    <string name="pytanie_szef">Jak nazywa sie szef tego zespołu F1</string>
+    <string name="odp_a4">Toto Wolff </string>
+    <string name="odp_b4">Christian Horner</string>
+    <string name="odp_c4">Mattia Binotto</string>
+    <string name="opis4">nie wiem co napisać</string>
+    <string name="sprawd_odpowied">Sprawdź odpowiedź</string>
+    <string name="podpowiedz">podpowiedz</string>
+    <string name="ok">Dobra odpowiedz</string>
+    <string name="nope">zła odpowiedz</string>
+    <string name="opis_xo_scroll">najwyższy szczyt Ziemi, ośmiotysięcznik położony w Himalajach Wysokich, na granicy Nepalu i Chińskiej Republiki Ludowej. Po chińskiej stronie objęty ochroną w ramach rezerwatu biosfery pod nazwą Rezerwat Biosfery Czomolungmy. Jest zbudowany z granitów, gnejsów oraz z wapieni i łupków</string>
+    <string name="punktacja">punkty:</string>
+
+
+</resources>
