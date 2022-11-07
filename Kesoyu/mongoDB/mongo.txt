@@ -1,0 +1,41 @@
+db.pracownicy.insertOne({imie:"Jan", nazwisko:"Kowalski", etat:"prezes", zatrudniony :new Date(2001-01-01),placa:10110, id_zesp:10})
+
+db.pracownicy.insertMany([{imie:"Janina", nazwisko:"Kowalska", 
+etat:"dyrektor", zatrudniony :new Date(1998-01-01),placa:15110, id_zesp:10},
+{imie:"Tom", 
+nazwisko:"Nowak",
+etat:"kierownik", 
+zatrudniony :new Date(2011-01-01),placa:8110, id_zesp:10},
+{imie:"Anna", nazwisko:"Kowaleska", etat:"programista", zatrudniony :new Date(2021-01-01),placa:10110, id_zesp:10}])
+
+db.pracownicy.find()
+
+$in w zakresie
+$nin poza zakreseme
+$eq równe
+$ne nierówne
+$gt wieksze
+$lt mniejsze
+$gte wieksze badz rowne
+$lte mniejsze lub rowne
+
+db.pracownicy.find({etat:{$nin: ["prezes","dyrektor","kierownik"]}})
+
+db.pracownicy.find({placa: {$lt: 11000}})
+
+db.pracownicy.find({placa: {$lt: 11000, $gt: 10000}})
+
+db.pracownicy.find({$or: [{placa:{$gt:11000}},{placa:{$lt:10000}}]})
+
+db.pracownicy.aggregate([{$group:{"_id":"_id", sredniaPlaca:{$avg :"$placa"}}}])
+$sum
+$min
+$max
+$avg
+
+
+db.pracownicy.updateOne({nazwisko:"Nowy"},{$set:{placa:4000}})
+db.pracownicy.updateOne({nazwisko:"Nowy"},{$set:{placa:4300,etat:"junior"}})
+
+
+

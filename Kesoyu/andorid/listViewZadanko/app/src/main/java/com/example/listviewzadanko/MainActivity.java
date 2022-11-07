@@ -2,8 +2,10 @@ package com.example.listviewzadanko;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -15,6 +17,12 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     EditText itemd;
     EditText types;
     ArrayList<String> itemList;
+    Button send2;
 
 
     @Override
@@ -38,8 +47,10 @@ public class MainActivity extends AppCompatActivity {
         itemd = findViewById(R.id.desc);
         types = findViewById(R.id.type);
         itemList = new ArrayList<>();
+        send2 = findViewById(R.id.send2);
 
-       itemList.add("Usterka");
+
+
         String name = itemn.getText().toString();
         String desc = itemd.getText().toString();
         String type = types.getText().toString();
@@ -50,8 +61,10 @@ public class MainActivity extends AppCompatActivity {
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                String name = itemn.getText().toString();
                 if (!name.isEmpty()) {
-                    String name = itemn.getText().toString();
+
                     itemList.add(name);
 
                     adapter.notifyDataSetChanged();
@@ -61,29 +74,33 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+           listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+               @Override
+               public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                   Toast.makeText(MainActivity.this,"zapisano do JSON", Toast.LENGTH_SHORT).show();
 
-            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(MainActivity.this,"wybrano usterke:"+i+" " +itemList.get(i).toString(),Toast.LENGTH_SHORT).show();
-            }
+                   String desc = itemd.getText().toString();
+                   String type = types.getText().toString();
+                   String name = itemn.getText().toString();
 
-        });
-            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                @Override
-                public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                    Intent intent = new Intent(MainActivity.this,listviewpomocna.class);
-                    String desc = itemd.getText().toString();
-                    String type = types.getText().toString();
-                    String name = itemn.getText().toString();
-                    intent.putExtra("desc", desc);
-                    intent.putExtra("type", type);
-                    intent.putExtra("name", name);
-                    adapter.notifyDataSetChanged();
-                    startActivity(intent);
-                }
+                   adapter.notifyDataSetChanged();
+
+                   writeToFile();
+               }
+
+
             });
 
+       public void writeToFile(String data,Context context) {
+            try {
+                OutputStreamWriter outputStreamWriter = new OutputStreamWriter(context.openFileOutput("config.txt", Context.MODE_PRIVATE));
+                outputStreamWriter.write(data);
+                outputStreamWriter.close();
+            }
+            catch (IOException e) {
+                Log.e("Exception", "File write failed: " + e.toString());
+            }
+        }
 
 
 
