@@ -2,8 +2,13 @@ Wstawienie 3 produktow:
 db.product.insertMany([{name:"obiad", price:100, category:"jedzenie"},
 {name:"ryz", price:25,category:"konserwy"},
 {name:"sliwka", price:3, category:"owoce"}]);
+
 find:
 db.product.find({price: {$lt: 20}})
 db.product.find({price: {$gt: 20}})
 db.product.aggregate([{$group:{"_id":"id", max:{$max :"$price"}}}])
 db.product.aggregate([{$group:{"_id":"id", min:{$min :"$price"}}}])
+
+upgrade:
+db.product.update({ name: "pomidor" },{ $inc: { price: 20 }},{ upsert: true });
+db.pracownicy.updateMany({},{ $inc: { placa: 20 }},{ upsert: true });
