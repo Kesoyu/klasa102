@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">androidZKupka</string>
+    <string-array name="przedmioty">
+        <item>matematyka</item>
+        <item>fizyka</item>
+        <item>chemia</item>
+        <item>informatyka</item>
+    </string-array>
+</resources>
