@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -152,6 +153,32 @@ namespace menuPalindrom
                 anagramOutput.Text = "Slowa sa anagramami";
             else
                 anagramOutput.Text = "zjebales";
+        }
+        List<int> pierwszeNumberList = new List<int>();
+        private void pierwsze(object sender, RoutedEventArgs e)
+        {
+            
+            Random rand = new Random();
+            SelectWindow("pierwsze");
+            String numbers = string.Empty;
+            for(int i = 0; i < 10; i++)
+            {
+                pierwszeNumberList.Add(rand.Next(1, 100));
+                if (i == 9)
+                    numbers += pierwszeNumberList[i];
+                else
+                    numbers += pierwszeNumberList[i] + ", ";
+            }
+            pierwszeNumberText.Text += numbers;
+            
+        }
+
+        private void searchFirstNumber(object sender, RoutedEventArgs e)
+        {
+            if(pierwszeNumberList.Count != 0)
+            {
+
+            }
         }
     }
 }

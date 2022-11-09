@@ -20,6 +20,7 @@
                 <MenuItem Header="Funkcje">
                     <MenuItem Header="NWD" Click="NWD"/>
                     <MenuItem Header="NWW" Click="NWW"/>
+                    <MenuItem Header="pierwsze" Click="pierwsze"/>
                 </MenuItem>
                 <MenuItem Header="Sortowanie">
                     <MenuItem Header="Bąbelkowe" Click="sortBabelkowe"/>
@@ -43,7 +44,9 @@
             <TextBlock x:Name="anagramOutput"></TextBlock>
         </StackPanel>
         <StackPanel Visibility="Hidden" Grid.Row="1" x:Name="pierwszeWindow">
-            <TextBlock Text="pierwszeWindow"/>
+            <TextBlock x:Name="pierwszeNumberText" Text="Liczby: "/>
+            <Button FontSize="24" Click="searchFirstNumber">Szukaj Pierwszych</Button>
+            <TextBlock x:Name="pierwszeOutputText" Text="Liczby: "/>
         </StackPanel>
         <StackPanel Visibility="Hidden" Grid.Row="1" x:Name="nwdWindow">
             <TextBlock Text="nwdWindow"/>

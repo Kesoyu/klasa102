@@ -13,76 +13,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="293afd4d-b3eb-4425-a366-ae3c573d96fe" name="Changes" comment="googlemapsapp">
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/app/src/androidTest/java/com/example/zadanieegzaminacyjne/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/app/src/main/java/com/example/zadanieegzaminacyjne/MainActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/app/src/main/res/drawable/cat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/app/src/test/java/com/example/zadanieegzaminacyjne/ExampleUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zadanieEgzaminacyjne/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../androidZKupka/.idea/deploymentTargetDropDown.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../androidZKupka/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../androidZKupka/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../androidZKupka/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../androidZKupka/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/apk/debug/app-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/14/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/14/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/newgooglemapsapi/MapsActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/newgooglemapsapi/MapsActivity$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/newgooglemapsapi/MapsActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/newgooglemapsapi/MapsActivity$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/newgooglemapsapi/MapsActivity$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/newgooglemapsapi/MapsActivity$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/newgooglemapsapi/MapsActivity$MyLocationListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/newgooglemapsapi/MapsActivity$MyLocationListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/newgooglemapsapi/MapsActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/newgooglemapsapi/MapsActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/newgooglemapsapi/MapsActivity$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/newgooglemapsapi/MapsActivity$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/newgooglemapsapi/MapsActivity$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/newgooglemapsapi/MapsActivity$2.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/newgooglemapsapi/MapsActivity$3.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/newgooglemapsapi/MapsActivity$3.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/newgooglemapsapi/MapsActivity$MyLocationListener.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/newgooglemapsapi/MapsActivity$MyLocationListener.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/newgooglemapsapi/MapsActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/newgooglemapsapi/MapsActivity.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newgooglemapsapi/MapsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newgooglemapsapi/MapsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/.vs/menuPalindrom/FileContentIndex/78cf6558-ad7d-4966-8d4b-ab73ddd9f427.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/.vs/menuPalindrom/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/.vs/menuPalindrom/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/MainWindow.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/MainWindow.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/bin/Debug/net6.0-windows/menuPalindrom.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/bin/Debug/net6.0-windows/menuPalindrom.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/bin/Debug/net6.0-windows/menuPalindrom.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/bin/Debug/net6.0-windows/menuPalindrom.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/obj/Debug/net6.0-windows/MainWindow.baml" beforeDir="false" afterPath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/obj/Debug/net6.0-windows/MainWindow.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/obj/Debug/net6.0-windows/MainWindow.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/obj/Debug/net6.0-windows/MainWindow.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/obj/Debug/net6.0-windows/MainWindow.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/obj/Debug/net6.0-windows/MainWindow.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/obj/Debug/net6.0-windows/menuPalindrom.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/obj/Debug/net6.0-windows/menuPalindrom.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/obj/Debug/net6.0-windows/menuPalindrom.g.resources" beforeDir="false" afterPath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/obj/Debug/net6.0-windows/menuPalindrom.g.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/obj/Debug/net6.0-windows/menuPalindrom.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/obj/Debug/net6.0-windows/menuPalindrom.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

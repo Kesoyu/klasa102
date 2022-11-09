@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Settings"
+        android:id="@+id/menuItemSettings"
+        android:actionLayout="@layout/activity_main"/>
+    <item android:title="Help"
+        android:id="@+id/menuItemHelp"
+        android:actionLayout="@layout/activity_main"/>
+    <item android:title="FAQ"
+        android:id="@+id/menuItemFAQ"
+        android:actionLayout="@layout/activity_main"/>
+</menu>
