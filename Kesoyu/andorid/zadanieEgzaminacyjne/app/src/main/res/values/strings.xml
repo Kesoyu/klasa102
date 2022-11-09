@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">mobile</string>
+    <string name="photoofthecat">photoOfTheCat</string>
+    <string name="ciekawe_miejsca">Ciekawe Miejsca</string>
+    <string name="odwied_ciekawe_miejsce_w_twoim_mie_cie">Odwiedź ciekawe miejsce w Twoim mieście</string>
+    <string name="opis">Opis</string>
+    <string name="polub">Polub</string>
+    <string name="usu">Usuń</string>
+    <string name="zapisz">Zapisz</string>
+    <string name="miejsca">Miejsca</string>
+</resources>

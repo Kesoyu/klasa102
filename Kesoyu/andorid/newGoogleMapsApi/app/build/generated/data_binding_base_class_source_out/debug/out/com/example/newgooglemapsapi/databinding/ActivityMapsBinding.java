@@ -28,6 +28,9 @@ public final class ActivityMapsBinding implements ViewBinding {
   public final Button btnPhoto;
 
   @NonNull
+  public final Button buttonSendData;
+
+  @NonNull
   public final TextView gpsTextView;
 
   @NonNull
@@ -43,11 +46,12 @@ public final class ActivityMapsBinding implements ViewBinding {
   public final FragmentContainerView map;
 
   private ActivityMapsBinding(@NonNull FrameLayout rootView, @NonNull Button btnPhoto,
-      @NonNull TextView gpsTextView, @NonNull AppCompatImageView imgView,
-      @NonNull ListView listView, @NonNull RelativeLayout listViewLayout,
-      @NonNull FragmentContainerView map) {
+      @NonNull Button buttonSendData, @NonNull TextView gpsTextView,
+      @NonNull AppCompatImageView imgView, @NonNull ListView listView,
+      @NonNull RelativeLayout listViewLayout, @NonNull FragmentContainerView map) {
     this.rootView = rootView;
     this.btnPhoto = btnPhoto;
+    this.buttonSendData = buttonSendData;
     this.gpsTextView = gpsTextView;
     this.imgView = imgView;
     this.listView = listView;
@@ -88,6 +92,12 @@ public final class ActivityMapsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.buttonSendData;
+      Button buttonSendData = ViewBindings.findChildViewById(rootView, id);
+      if (buttonSendData == null) {
+        break missingId;
+      }
+
       id = R.id.gpsTextView;
       TextView gpsTextView = ViewBindings.findChildViewById(rootView, id);
       if (gpsTextView == null) {
@@ -118,8 +128,8 @@ public final class ActivityMapsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMapsBinding((FrameLayout) rootView, btnPhoto, gpsTextView, imgView,
-          listView, listViewLayout, map);
+      return new ActivityMapsBinding((FrameLayout) rootView, btnPhoto, buttonSendData, gpsTextView,
+          imgView, listView, listViewLayout, map);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

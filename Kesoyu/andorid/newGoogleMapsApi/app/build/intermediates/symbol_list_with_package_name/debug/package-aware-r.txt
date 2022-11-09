@@ -2805,6 +2805,7 @@ id bounceEnd
 id bounceStart
 id btnPhoto
 id buttonPanel
+id buttonSendData
 id cache_measures
 id callMeasure
 id cancel_button

@@ -11,6 +11,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable unknown
 id btnPhoto
+id buttonSendData
 id gpsTextView
 id imgView
 id listView

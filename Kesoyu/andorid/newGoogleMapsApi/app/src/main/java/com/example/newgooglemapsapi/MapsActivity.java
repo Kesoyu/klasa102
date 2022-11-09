@@ -18,6 +18,7 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Base64;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -36,7 +37,13 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.example.newgooglemapsapi.databinding.ActivityMapsBinding;
 
+import org.json.JSONObject;
+
+import java.io.ByteArrayOutputStream;
+import java.io.DataOutputStream;
 import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -48,10 +55,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private ActivityMapsBinding binding;
     TextView editLocation;
     ListView listView;
+    Button btnSendData;
     ArrayList<String> arrayList;
     public static final int CAMERA_ACTION_CODE = 1;
     ImageView imageProfile;
     Button takePhoto;
+    String photoString;
+    String location;
     ActivityResultLauncher<Intent> activityResultLauncher;
     String name;
 
@@ -61,6 +71,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         binding = ActivityMapsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        btnSendData = findViewById(R.id.buttonSendData);
         listView = findViewById(R.id.listView);
         arrayList = new ArrayList<>();
         for(int i = 1;i<6;i++)
@@ -89,6 +100,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             Bundle bundle = result.getData().getExtras();
                             Bitmap finalPhoto = (Bitmap) bundle.get("data");
                             imageProfile.setImageBitmap(finalPhoto);
+                            photoString = getStringFromBitmap(finalPhoto);
                         }
                     }
                 });
@@ -101,6 +113,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 });
         LocationListener locationListener = new MyLocationListener();
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 10, locationListener);
+        btnSendData.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                sendPost();
+            }
+        });
     }
 
     @Override
@@ -144,6 +162,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             String s = longitude + "\n" + latitude + "\n\nMy Current City is: "
                     + cityName;
             editLocation.setText(s);
+            location = longitude + " " + latitude;
         }
 
         @Override
@@ -172,5 +191,53 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng sydney = new LatLng(-34, 151);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+    }
+    private String getStringFromBitmap(Bitmap bitmapPicture) {
+        final int COMPRESSION_QUALITY = 100;
+        String encodedImage;
+        ByteArrayOutputStream byteArrayBitmapStream = new ByteArrayOutputStream();
+        bitmapPicture.compress(Bitmap.CompressFormat.PNG, COMPRESSION_QUALITY,
+                byteArrayBitmapStream);
+        byte[] b = byteArrayBitmapStream.toByteArray();
+        encodedImage = Base64.encodeToString(b, Base64.DEFAULT);
+        return encodedImage;
+    }
+    public void sendPost() {
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    URL url = new URL("https://6ti4xfuan6.execute-api.us-east-1.amazonaws.com/Prod/q");
+                    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                    conn.setRequestMethod("POST");
+                    conn.setRequestProperty("Content-Type", "application/json;charset=UTF-8");
+                    conn.setRequestProperty("Accept","application/json");
+                    conn.setDoOutput(true);
+                    conn.setDoInput(true);
+
+                    JSONObject jsonParam = new JSONObject();
+                    jsonParam.put("Type", name);
+                    jsonParam.put("Photo", photoString);
+                    jsonParam.put("Location", location);
+
+                    Log.i("JSON", jsonParam.toString());
+                    DataOutputStream os = new DataOutputStream(conn.getOutputStream());
+                    //os.writeBytes(URLEncoder.encode(jsonParam.toString(), "UTF-8"));
+                    os.writeBytes(jsonParam.toString());
+
+                    os.flush();
+                    os.close();
+
+                    Log.i("STATUS", String.valueOf(conn.getResponseCode()));
+                    Log.i("MSG" , conn.getResponseMessage());
+
+                    conn.disconnect();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        thread.start();
     }
 }
