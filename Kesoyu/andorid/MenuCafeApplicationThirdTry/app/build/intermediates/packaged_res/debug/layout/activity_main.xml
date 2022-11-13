@@ -19,12 +19,6 @@
         app:navigationIcon="@drawable/ic_navigation"
         >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:text="Donut Cafe"/>
-
         <androidx.appcompat.widget.ActionMenuView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -33,20 +27,13 @@
 
         </androidx.appcompat.widget.ActionMenuView>
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_gravity="right"
-            android:src="@drawable/ic_more" />
 
     </androidx.appcompat.widget.Toolbar>
 
-    <ListView
-        android:id="@+id/listViewContent"
+    <LinearLayout
+        android:id="@+id/replace"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"></LinearLayout>
 
 </LinearLayout>
