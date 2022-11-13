@@ -26,22 +26,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate( Bundle savedInstanceState ) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
-        MenuMain menuMainFragment = new MenuMain();
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.replace, menuMainFragment);
-        transaction.commit();
-        actionMenuView = findViewById(R.id.actionMenuView);
+        setToolbarActions();
 
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("Donut Cafe");
-        }
-        toolbar.setSubtitle("Welcome in ours ordering application");
-        Log.e("Test", "Here");
-        toolbar.inflateMenu(R.menu.menu);
 
     }
     @Override
@@ -50,4 +36,33 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu, menu);
         return true;
     }
+
+    public void setMainMenuFragment(){
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        MenuMain menuMainFragment = new MenuMain();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.replace, menuMainFragment);
+        transaction.commit();
+        setToolbarActions();
+    }
+
+    public void setToolbarActions(){
+        actionMenuView = findViewById(R.id.actionMenuView);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle("Donut Cafe");
+        }
+        toolbar.setSubtitle("Welcome in ours ordering application");
+        Log.e("Test", "Here");
+        toolbar.inflateMenu(R.menu.menu);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setMainMenuFragment();
+            }
+        });
+    }
+
 }
