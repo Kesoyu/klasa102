@@ -1,0 +1,50 @@
+h1{
+    text-align: center;
+    font-size: 64px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:active, #bigZabrze:active, #map:active{
+    color: #ffd700;
+}
+
+#bigZabrze{
+    color: #4169e1;
+}
+
+.kafle{
+    width: 25%;
+    float: left;
+    text-align: center;
+    background-size: 100%;
+    background-position: center;
+}
+
+nav{
+    margin-bottom: 120px;
+}
+
+#imgH{
+    background-image: url("../../assets/images/historia.jpg");
+}
+
+#imgG{
+    background-image: url("../../assets/images/biskupice.jpg");
+}
+
+#imgA{
+    background-image: url("../../assets/images/prettyGuido.jpg");
+}
+
+#imgM{
+    background-image: url("../../assets/images/mapa.jpg");
+}
+
+#map{
+    color: #bf2113;
+}

@@ -1,0 +1,15 @@
+img{
+    width: 400px;
+}
+#gal{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galeria{
+    text-align: center;
+    width: 400px;
+    height: 300px;
+    margin: 30px;
+}
