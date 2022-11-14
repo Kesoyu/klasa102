@@ -26,3 +26,15 @@ app.get('/quiz_pytanie', (req,res)=>{
     console.log(pytanie,odpowiedz);
 });
 
+const obietnica = new Promise((resolve,reject)=>{
+    const wylosowana = Math.random().toFixed(2);
+    if(wylosowana>0.5)
+        resolve(wylosowana)
+    else
+        reject(wylosowana)
+})
+obietnica.then(wylosowana=>{
+    console.log("wylosowana liczba"+wylosowana)
+}).catch(wylosowana => {
+    console.log("obietnica nie spełniopnads"+wylosowana);
+});
