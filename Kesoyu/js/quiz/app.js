@@ -8,3 +8,21 @@ const www = __dirname + '\\public';
 app.listen(port, ()=>{console.log(`listening on port ${host}:${port}`);});
 
 app.use(express.static(www));
+
+let przekazanePytania=0;
+const pytania = [
+    {pytanie: "asd", odpowiedz:["jeden","dwa","trzey","czterty"], poprawna_odpowiedz:0},
+    {pytanie: "dsa", odpowiedz:["jeden","dwa","trzey","czterty"], poprawna_odpowiedz:3},
+    {pytanie: "ska", odpowiedz:["jeden","dwa","trzey","czterty"], poprawna_odpowiedz:1}
+]
+
+app.get('/quiz_pytanie', (req,res)=>{
+    const kolejne_pytanie = pytania[przekazanePytania];
+    let pytanie = pytania[przekazanePytania].pytanie;
+    let odpowiedz = pytania[przekazanePytania].odpowiedz;
+    res.json({
+        pytanie,odpowiedz
+    })
+    console.log(pytanie,odpowiedz);
+});
+
