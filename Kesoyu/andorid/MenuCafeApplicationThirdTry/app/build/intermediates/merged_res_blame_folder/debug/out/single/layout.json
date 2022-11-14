@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.example.menucafeapplicationthirdtry.app-mergeDebugResources-28:/layout/fragment_menu_drinks.xml",
+        "source": "com.example.menucafeapplicationthirdtry.app-main-31:/layout/fragment_menu_drinks.xml"
+    },
+    {
+        "merged": "com.example.menucafeapplicationthirdtry.app-mergeDebugResources-28:/layout/fragment_menu_main.xml",
+        "source": "com.example.menucafeapplicationthirdtry.app-main-31:/layout/fragment_menu_main.xml"
+    },
+    {
+        "merged": "com.example.menucafeapplicationthirdtry.app-mergeDebugResources-28:/layout/activity_main.xml",
+        "source": "com.example.menucafeapplicationthirdtry.app-main-31:/layout/activity_main.xml"
+    }
+]
