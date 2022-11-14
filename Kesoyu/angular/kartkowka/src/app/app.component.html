@@ -1,0 +1,52 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="./app.component.css">
+  <style>
+    
+    body{
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+
+    }
+    .content{
+      width: 90%;
+      margin: 0;
+      float: right;
+      text-align: center;
+      height: 126px;
+      background-color: saddlebrown;
+    }
+    .menu div{
+      border: 2px solid black;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <table class="table table-dark" style="width: 20%;margin: 0; float: left;">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td><a routerLink="/jeden" routerLinkActive="active">jeden</a></td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td><a routerLink="/dwa" routerLinkActive="active">dwa</a></td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td><a routerLink="/trzy" routerLinkActive="active">trzy</a></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="content" style="width: 80%; float: right; margin: 0;">
+    <router-outlet></router-outlet>
+  </div>
+</body>
+

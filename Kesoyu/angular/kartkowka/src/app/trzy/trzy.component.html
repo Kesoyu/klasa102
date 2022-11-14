@@ -1,0 +1,13 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="./trzy.component.css">
+</head>
+<body>
+    <ol class="list-group">
+        <li class="list-group-item" *ngFor="let element of lista;let i = index" (click)="clicked(i)">{{element}}</li> 
+     </ol>
+     <form #nwm = "ngForm" *ngIf="visible" (ngSubmit)="changedData()">
+         <input class="input-group input-group-sm mb-3" type="text" [(ngModel)]="selectedText" [ngModelOptions]="{standalone: true}">
+         <button class="btn btn-primary" type="submit">zapisz</button>
+     </form>
+</body>
+
