@@ -1,0 +1,11 @@
+<a routerLink="/samochody" routerLinkActive="active">Lista samochodów</a><br> <!--To są odnośniki do innych podstron-->
+<a routerLink="/najlepszy" routerLinkActive="active">Najlepszy w rankingu</a><br>
+<a routerLink="/edycja" routerLinkActive="active">Edytuj dane aut</a>
+
+<router-outlet></router-outlet> <!--A to miejsce gdzie wyświetlają się treści komponentów. Strona działa tak, że TEN PLIK wyświetlany jest zawsze, a podstrony (komponenty) doklejane są do tego pliku, właśnie w tym znaczniku <router-outlet>-->
+
+<!--Nowy komponent tworzymy w konsoli wpisaniem: ng g c nazwaKomponentu--> 
+<!--jeżeli nie zadziała to dopisujemy npx z przodu-->
+
+<!--Strona korzysta z obiektów typu Samochod i tablicy z samochodami, to 2 pliki .ts w folderze app-->
+<!--Routing i układ podstron ustala się w pliku app-routing.module.ts-->

@@ -1,0 +1,10 @@
+<div class="container text-center">
+    <h3>Wszystkie samochody</h3>
+    <div class="row">
+        <div *ngFor="let auto of autka" class="card ms-3 mb-3" style="width: 18rem;">
+            <img class="card-img-top" src="{{auto.url}}" style="max-height: 200px;">
+            <input type="texts" class="card-title" [(ngModel)]="auto.nazwa">
+            <button type="submit" class="btn btn-primary">Zapisz</button>
+        </div>
+    </div>
+</div>
