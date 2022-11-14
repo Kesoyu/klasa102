@@ -10,34 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd165300-b451-48fb-93e1-fbda45afb428" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/debug/res/drawable-anydpi/ic_more.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/debug/res/drawable-anydpi/ic_navigation.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/debug/res/drawable-hdpi/ic_more.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/debug/res/drawable-hdpi/ic_navigation.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/debug/res/drawable-mdpi/ic_more.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/debug/res/drawable-mdpi/ic_navigation.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/debug/res/drawable-xhdpi/ic_more.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/debug/res/drawable-xhdpi/ic_navigation.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/debug/res/drawable-xxhdpi/ic_more.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/debug/res/drawable-xxhdpi/ic_navigation.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../newGoogleMapsApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../newGoogleMapsApi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/.vs/ProjectEvaluation/menupalindrom.metadata.v5.1" beforeDir="false" afterPath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/.vs/ProjectEvaluation/menupalindrom.metadata.v5.1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/.vs/ProjectEvaluation/menupalindrom.projects.v5.1" beforeDir="false" afterPath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/.vs/ProjectEvaluation/menupalindrom.projects.v5.1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/.vs/menuPalindrom/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/.vs/menuPalindrom/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/.vs/menuPalindrom/FileContentIndex/78cf6558-ad7d-4966-8d4b-ab73ddd9f427.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/.vs/menuPalindrom/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/.vs/menuPalindrom/v17/.futdcache.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/.vs/menuPalindrom/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/.vs/menuPalindrom/v17/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/MainWindow.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/MainWindow.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/bin/Debug/net6.0-windows/menuPalindrom.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/bin/Debug/net6.0-windows/menuPalindrom.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/bin/Debug/net6.0-windows/menuPalindrom.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/bin/Debug/net6.0-windows/menuPalindrom.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/obj/Debug/net6.0-windows/MainWindow.baml" beforeDir="false" afterPath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/obj/Debug/net6.0-windows/MainWindow.baml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/obj/Debug/net6.0-windows/MainWindow.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/obj/Debug/net6.0-windows/MainWindow.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/obj/Debug/net6.0-windows/MainWindow.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/obj/Debug/net6.0-windows/MainWindow.g.i.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/obj/Debug/net6.0-windows/menuPalindrom.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/obj/Debug/net6.0-windows/menuPalindrom.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/obj/Debug/net6.0-windows/menuPalindrom.g.resources" beforeDir="false" afterPath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/obj/Debug/net6.0-windows/menuPalindrom.g.resources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/obj/Debug/net6.0-windows/menuPalindrom.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../wpf/menuPalindrom/menuPalindrom/menuPalindrom/obj/Debug/net6.0-windows/menuPalindrom.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

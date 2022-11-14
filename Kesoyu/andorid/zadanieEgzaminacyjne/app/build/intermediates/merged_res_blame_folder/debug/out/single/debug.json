@@ -44,6 +44,10 @@
         "source": "C:\\Users\\programista\\.gradle\\daemon\\7.4\\com.example.zadanieegzaminacyjne.app-main-31:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
+        "merged": "com.example.zadanieegzaminacyjne.app-merged_res-29:/drawable_muzeum.jpg.flat",
+        "source": "com.example.zadanieegzaminacyjne.app-main-31:/drawable/muzeum.jpg"
+    },
+    {
         "merged": "C:\\Users\\programista\\.gradle\\daemon\\7.4\\com.example.zadanieegzaminacyjne.app-merged_res-29:\\xml_backup_rules.xml.flat",
         "source": "C:\\Users\\programista\\.gradle\\daemon\\7.4\\com.example.zadanieegzaminacyjne.app-main-31:\\xml\\backup_rules.xml"
     },
