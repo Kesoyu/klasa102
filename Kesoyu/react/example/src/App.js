@@ -22,6 +22,36 @@ function WlasnaLista({lista, wrapper = ul, item}){
   );
 }
 
+function ElementListy({index, dane, updateList}){
+  const [show, setShow] = useState(false);
+  const onUpdateClick = state => updateList(
+    list => {
+      let copy = [...list]
+      copy[index] = state;
+      return copy;
+    }
+  );
+ 
+  return(
+    <li>
+      <h4 onClick={() => setShow(it => !it)}>{dane}</h4>
+      {show ? <SimpleForm initialData={dane} onButtonClick={onUpdateClick} buttonName="Zmien"/> : <></>}
+
+    </li>
+  );
+}
+
+function SimpleForm({ initialData, onButtonClick, buttonName}){
+  const [state, setState] = useState(initialData);
+
+  return(
+    <>
+      <input type="number" value={state} onChange={e => setState(e.target.value)}/>
+      <button onClick={() => onButtonClick(state)}>{buttonName}</button>
+    </>
+  )
+}
+
 function Example(){
   const [number, setNumber] = useState(0);
   
@@ -61,6 +91,7 @@ function App() {
   //const [state, setState] = useState("a");
   const [state, setState] = useState(0);
   const s = useMemo(() => state*state, [state])
+  
   return (
       <Fragment>
         <Example>
@@ -80,7 +111,12 @@ function App() {
       <button onClick={() => setList(lista => [...lista, state])}>Dodaj</button>
       <h5>{state}</h5>
       <h5>{s}</h5>
-      <WlasnaLista lista={lista} wrapper={ul} item={it => <li>{it}</li>}/>
+      {/* <WlasnaLista lista={lista} wrapper={ul} item={it => <li>{it}</li>}/> */}
+      {/* <WlasnaLista lista={lista} wrapper={ul} item={listItemF}/> */}
+      <ul>
+        {lista.map((it,index) => 
+        <ElementListy index={index} dane={it} updateList={setList}/>)}
+      </ul>
       </Fragment>
   );
 }
