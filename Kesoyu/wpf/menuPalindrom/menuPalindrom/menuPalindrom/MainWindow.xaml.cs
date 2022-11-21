@@ -152,7 +152,7 @@ namespace menuPalindrom
             if (isPalindrom(palindromText))
                 palindromOutput.Text = "Podane słowo jest palindromem";
             else {
-                palindromOutput.Text = "zjebales";
+                palindromOutput.Text = "źle";
             }
         }
 
@@ -165,7 +165,7 @@ namespace menuPalindrom
             if (isAnagram(firstAngramText, secondAngramText))
                 anagramOutput.Text = "Slowa sa anagramami";
             else
-                anagramOutput.Text = "zjebales";
+                anagramOutput.Text = "źle";
         }
         List<int> pierwszeNumberList = new List<int>();
 
