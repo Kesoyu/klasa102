@@ -49,19 +49,35 @@
             <TextBlock x:Name="pierwszeOutputText" Text="Liczby: "/>
         </StackPanel>
         <StackPanel Visibility="Hidden" Grid.Row="1" x:Name="nwdWindow">
-            <TextBlock Text="nwdWindow"/>
+            <Label Content="Liczba A: "/>
+            <TextBox x:Name="nwdA"/>
+            <Label Content="Liczba B: "/>
+            <TextBox x:Name="nwdB"/>
+            <Button Content="NWD" Click="nwdClick"/>
+            <TextBlock x:Name="nwdOutput"/>
         </StackPanel>
         <StackPanel Visibility="Hidden" Grid.Row="1" x:Name="nwwWindow">
-            <TextBlock Text="nwwWindow"/>
+            <Label Content="Liczba A: "/>
+            <TextBox x:Name="nwwA"/>
+            <Label Content="Liczba B: "/>
+            <TextBox x:Name="nwwB"/>
+            <Button Content="NWW" Click="nwwClick"/>
+            <TextBlock x:Name="nwwOutput"/>
         </StackPanel>
         <StackPanel Visibility="Hidden" Grid.Row="1" x:Name="sortowanieBabelkowe">
-            <TextBlock Text="sortowanieBabelkowe"/>
+            <TextBlock Text="Liczby: " x:Name="sortBubbleNumbers"/>
+            <Button Content="Sortuj" Click="sortBubbleClick"/>
+            <TextBlock Text="Liczby: " x:Name="sortBubbleOutput"/>
         </StackPanel>
         <StackPanel Visibility="Hidden" Grid.Row="1" x:Name="sortowaniePrzezWstawianie">
-            <TextBlock Text="sortowaniePrzezWstawianie"/>
+            <TextBlock Text="Liczby: " x:Name="sortInsertionNumbers"/>
+            <Button Content="Sortuj" Click="sortInsertionClick"/>
+            <TextBlock Text="Liczby: " x:Name="sortInsertionOutput"/>
         </StackPanel>
         <StackPanel Visibility="Hidden" Grid.Row="1" x:Name="sortowaniePrzezWybieranie">
-            <TextBlock Text="sortowaniePrzezWybieranie"/>
+            <TextBlock Text="Liczby: " x:Name="sortSelectionNumbers"/>
+            <Button Content="Sortuj" Click="sortSelectionClick"/>
+            <TextBlock Text="Liczby: " x:Name="sortSelectionOutput"/>
         </StackPanel>
     </Grid>
 </Window>
