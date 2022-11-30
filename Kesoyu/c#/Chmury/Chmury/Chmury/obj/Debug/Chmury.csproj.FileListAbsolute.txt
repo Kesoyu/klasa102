@@ -1,0 +1,8 @@
+C:\Users\programista\Desktop\4a\Kesoyu\c#\Chmury\Chmury\Chmury\bin\Debug\Chmury.exe.config
+C:\Users\programista\Desktop\4a\Kesoyu\c#\Chmury\Chmury\Chmury\bin\Debug\Chmury.exe
+C:\Users\programista\Desktop\4a\Kesoyu\c#\Chmury\Chmury\Chmury\bin\Debug\Chmury.pdb
+C:\Users\programista\Desktop\4a\Kesoyu\c#\Chmury\Chmury\Chmury\obj\Debug\Chmury.csproj.AssemblyReference.cache
+C:\Users\programista\Desktop\4a\Kesoyu\c#\Chmury\Chmury\Chmury\obj\Debug\Chmury.csproj.SuggestedBindingRedirects.cache
+C:\Users\programista\Desktop\4a\Kesoyu\c#\Chmury\Chmury\Chmury\obj\Debug\Chmury.csproj.CoreCompileInputs.cache
+C:\Users\programista\Desktop\4a\Kesoyu\c#\Chmury\Chmury\Chmury\obj\Debug\Chmury.exe
+C:\Users\programista\Desktop\4a\Kesoyu\c#\Chmury\Chmury\Chmury\obj\Debug\Chmury.pdb
