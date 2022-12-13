@@ -1,0 +1,74 @@
+﻿<Window x:Class="Kartkowka.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kartkowka"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="417" Width="776">
+    <DockPanel>
+        <Button Margin="15" DockPanel.Dock="Top">Button</Button>
+        <Grid DockPanel.Dock="Right">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <UniformGrid Columns="2" Rows="3" >
+                <Button>Button</Button>
+                <Button>Button</Button>
+                <Button>Button</Button>
+                <Button>Button</Button>
+                <Button>Button</Button>
+                <Button>Button</Button>
+            </UniformGrid>
+            <WrapPanel  Orientation="Vertical" Grid.Row="1">
+
+                <Button Margin="5" Grid.Column="0" Grid.Row="0">Button</Button>
+                <Button Margin="5" Grid.Column="0" Grid.Row="1">Button</Button>
+                <Button Margin="5" Grid.Column="0" Grid.Row="2">Button</Button>
+                <Button Margin="5" Grid.Column="0" Grid.Row="3">Button</Button>
+                <Button Margin="5" Grid.Column="0" Grid.Row="4">Button</Button>
+                <Button Margin="5" Grid.Column="0" Grid.Row="5">Button</Button>
+                <Button Margin="5" Grid.Column="1" Grid.Row="0">Button</Button>
+                <Button Margin="5" Grid.Column="1" Grid.Row="1">Button</Button>
+                <Button Margin="5" Grid.Column="1" Grid.Row="2">Button</Button>
+            </WrapPanel>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Column="0" Grid.Row="0">
+                <Button>Button</Button>
+                <Button>Button</Button>
+                <Button>Button</Button>
+            </StackPanel>
+
+            <DockPanel Grid.Row="1" Grid.Column="0">
+                <Button DockPanel.Dock="Right">Button</Button>
+                <Button DockPanel.Dock="Bottom">Button</Button>
+                <Button DockPanel.Dock="Top">Button</Button>
+                <Button DockPanel.Dock="Right">Button</Button>
+                <Button DockPanel.Dock="Left">Button</Button>
+                <Button DockPanel.Dock="Top">Button</Button>
+                <Button>Button</Button>
+            </DockPanel>
+            <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2">
+                <Button Margin="5">Button</Button>
+                <Button Margin="5">Button</Button>
+                <Button Margin="5">Button</Button>
+                <Button Margin="5">Button</Button>
+                <Button Margin="5">Button</Button>
+            </StackPanel>
+        </Grid>
+
+    </DockPanel>
+
+</Window>

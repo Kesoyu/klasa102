@@ -1,0 +1,8 @@
+C:\Users\programista\Desktop\4a\Kesoyu\c#\OstatnieChwileZKupka\OstatnieChwileZKupka\bin\Debug\OstatnieChwileZKupka.exe.config
+C:\Users\programista\Desktop\4a\Kesoyu\c#\OstatnieChwileZKupka\OstatnieChwileZKupka\bin\Debug\OstatnieChwileZKupka.exe
+C:\Users\programista\Desktop\4a\Kesoyu\c#\OstatnieChwileZKupka\OstatnieChwileZKupka\bin\Debug\OstatnieChwileZKupka.pdb
+C:\Users\programista\Desktop\4a\Kesoyu\c#\OstatnieChwileZKupka\OstatnieChwileZKupka\obj\Debug\OstatnieChwileZKupka.csproj.AssemblyReference.cache
+C:\Users\programista\Desktop\4a\Kesoyu\c#\OstatnieChwileZKupka\OstatnieChwileZKupka\obj\Debug\OstatnieChwileZKupka.csproj.SuggestedBindingRedirects.cache
+C:\Users\programista\Desktop\4a\Kesoyu\c#\OstatnieChwileZKupka\OstatnieChwileZKupka\obj\Debug\OstatnieChwileZKupka.csproj.CoreCompileInputs.cache
+C:\Users\programista\Desktop\4a\Kesoyu\c#\OstatnieChwileZKupka\OstatnieChwileZKupka\obj\Debug\OstatnieChwileZKupka.exe
+C:\Users\programista\Desktop\4a\Kesoyu\c#\OstatnieChwileZKupka\OstatnieChwileZKupka\obj\Debug\OstatnieChwileZKupka.pdb
